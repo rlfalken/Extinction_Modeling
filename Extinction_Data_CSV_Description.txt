@@ -9,10 +9,10 @@ T3 (C) - Temperature reading at right-wall [front facing] 62 cm from door, 19.7 
 U_T3 (C) -Uncertainty of temperature reading at Right-wall [front facing] 62 cm from door, 19.7 cm from floor, 24.8 cm in compartment
 T4 (C) - Temperature reading at left-wall [front facing] 37.5 cm from door, 94.0 cm from floor, 49.5 cm in compartment
 U_T4 (C) -Uncertainty of temperature reading at left-wall [front facing] 37.5 cm from door, 94.0 cm from floor, 49.5 cm in compartment
-T5 (C) - Temperature reading at left-wall [front facing] 86.0 cm from door, 94.0 cm from floor, 49.5 cm in compartment
-U_T5 (C) -Uncertainty of temperature reading at left-wall [front facing] 86.0 cm from door, 94.0 cm from floor, 49.5 cm in compartment
-T6 (C) - Temperature reading at left-wall [front facing] 37.5 cm from door, 24.0 cm from floor, 49.5 cm in compartment
-U_T6 (C) -Uncertainty of temperature reading at left-wall [front facing] 37.5 cm from door, 24.0 cm from floor, 49.5 cm in compartment
+T5 (C) - Temperature reading at left-wall [front facing] 37.5 cm from door, 24.0 cm from floor, 49.5 cm in compartment
+U_T5 (C) -Uncertainty of temperature reading at left-wall [front facing] 37.5 cm from door, 24.0 cm from floor, 49.5 cm in compartment
+T6 (C) - Temperature reading at left-wall [front facing] 86.0 cm from door, 94.0 cm from floor, 49.5 cm in compartment
+U_T6 (C) -Uncertainty of temperature reading at left-wall [front facing] 86.0 cm from door, 94.0 cm from floor, 49.5 cm in compartment
 T7 (C) - Temperature reading at left-wall [front facing] 86.0 cm from door, 24.0 cm from floor, 49.5 cm in compartment
 U_T7 (C) -Uncertainty of temperature reading at left-wall [front facing] 86.0 cm from door, 24.0 cm from floor, 49.5 cm in compartment
 T8 (C) - Temperature reading at on top of the compartment
