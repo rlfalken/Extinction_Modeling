@@ -1,0 +1,311 @@
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\documentclass[twocolumn,10pt]{article} % here we use the article class, rather than elsarticle
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\usepackage[square,numbers,sort&compress,comma]{natbib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{times}
+\usepackage[pagewise]{lineno}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\topmargin - 12pt % might need to be set to 0pt for some installations
+\oddsidemargin 32pt
+\textheight 610pt
+\textwidth 408pt
+\columnsep 24pt
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\def\thepage{}
+
+\renewenvironment{abstract}%
+              {% - begin definition
+               \small% - select font
+               {\bfseries \abstractname}% - select font
+               \par% - end a paragraph (skip \parsep)
+               \vspace{10pt}% - add vertical space
+              }% - complete definition
+
+\renewcommand\abstractname{Abstract}
+
+\newcommand{\nomenclature}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\bf% - select font
+               #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+\renewcommand{\section}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\bf% - select font
+               \refstepcounter{section}% - increment counter
+               \arabic{section}. #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+\renewcommand{\subsection}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\em% - select font
+               \refstepcounter{subsection}% - increment counter
+               \arabic{section}.% - insert title text
+               \arabic{subsection}. #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+\renewcommand{\subsubsection}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\em% - select font
+               \refstepcounter{subsubsection}% - increment counter
+               \arabic{section}.% - insert title text
+               \arabic{subsection}.% - insert title text
+               \arabic{subsubsection}. #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+  \newcommand{\acknowledgement}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\bf% - select font
+               #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+  \newcommand{\sectionbib}% - name of command
+              [1]% - number of arguments
+              {% - begin definition
+               \bgroup% - begin a local group
+               \flushleft% - turn on flushleft option
+               \small\bf% - select font
+               #1% - insert title text
+               \par% - end a paragraph (skip \parsep)
+               \egroup% - terminate local group
+              }% - complete definition
+
+\renewcommand\figurename{Fig.}
+\renewcommand{\captionsize}{\footnotesize}
+\setlength\abovecaptionskip{0pt}
+\setlength\belowcaptionskip{0pt}
+
+\renewcommand\bibsection{\sectionbib{\refname}}
+
+\setlength\bibsep{0pt}
+
+\pagenumbering{arabic}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\begin{document}
+
+\title{\LARGE Article title (17/20)\\
+                    Article title (continued)}
+
+\author{{\large Author 1 full name$^{a,*}$, Author 2 full name$^{a,b}$, Author 3 full name$^{b}$, $\ldots$ (13/15)}\\[10pt]
+        {\footnotesize \em $^a$Author affiliation 1}\\[-5pt]
+        {\footnotesize \em $^b$Author affiliation 2}\\[-5pt]
+        {\footnotesize \em $\ldots$ continue with one author affiliation per line (8/10)}}
+
+\date{}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\small
+\baselineskip 10pt
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\twocolumn[\begin{@twocolumnfalse}
+\vspace{50pt}
+\maketitle
+\vspace{40pt}
+\rule{\textwidth}{0.5pt}
+\begin{abstract} % 100 to 300 words.
+%
+%
+\end{abstract}
+\vspace{10pt}
+\parbox{1.0\textwidth}{\footnotesize {\em Keywords:} Keyword 1; Keyword 2; Keyword 3; $\ldots$ (8/10)}
+\rule{\textwidth}{0.5pt}
+\vspace{10pt}
+
+\end{@twocolumnfalse}] 
+
+\clearpage
+
+\twocolumn[\begin{@twocolumnfalse}
+
+\centerline{\bf Information for Colloquium Chairs and Cochairs, Editors, and Reviewers}
+
+\vspace{20pt}
+
+{\em
+Note: The explanatory material in italic font on this page should be removed prior to manuscript submission.
+\vspace{10pt}
+
+On page 2 of their submission, authors are to provide three pieces of information:
+1) a brief statement of the novelty and significance of the work reported in the manuscript;
+2) a brief statement of each author's contributions to the manuscript;
+and 3) the authors' preference and justification for the mode of presentation at the Symposium, in the event that the manuscript is accepted for presentation. The first two of these are consistent with current requirements for publication in Combustion and Flame and other journals. The third is specific to presentation at the Symposium. This material will not be included in the published paper, in the event that the manuscript is accepted for publication in the Proceedings.
+}
+
+\vspace{20pt}
+
+{\bf 1) Novelty and Significance Statement}
+\vspace{10pt}
+
+{\em
+A ``novelty and significance'' paragraph is required for all manuscripts. The minimum length is 50 words and the maximum 150 words. This paragraph should provide a concise statement for editors and reviewers to use in determining whether or not the contribution warrants acceptance for presentation at the Symposium and publication in the Proceedings.
+}
+
+\vspace{10pt}
+
+The novelty of this research is \ldots. It is significant because \ldots.
+
+\vspace{20pt} 
+
+{\bf 2) Author Contributions}
+\vspace{10pt}
+
+{\em
+The authors should be identified by their initials and each author's contributions to the manuscript should be indicated by 2-3 words such as, for example, ``designed research,'' ``performed research,'' ``analyzed data,'' ``wrote the paper,'' etc.
+}
+
+\begin{itemize}
+
+  \item{First author's contributions}
+
+  \item{Second author's contributions}
+
+  \item{\ldots}
+
+\end{itemize}
+
+\vspace{10pt}
+
+{\bf 3) Authors' Preference and Justification for Mode of Presentation at the Symposium}
+\vspace{10pt} 
+
+{\em
+As discussed in the information provided to authors, two formats will be available for presentation of papers at the Symposium: Oral Presentation Papers (OPPs) and Poster Presentation Papers (PPPs). Here authors are to specify their preference for OPP or PPP presentation, and to justify their preference with 3-5 highlights ($<$120 characters each, spaces included). The highlights should be consistent with the criteria that are given in the Criteria to Differentiate document that is available to authors. This authors' preference and justification will be considered in the decision making, although there is no guarantee that the authors' preferred mode of presentation can be accommodated. The mode of presentation for papers accepted for presentation at the Symposium will have no bearing on the decision on whether or not the submission is accepted for publication in the Proceedings.
+}
+
+\vspace{10pt}
+
+The authors prefer {\bf PPP/OPP} {\em (select one)} presentation at the Symposium, for the following reasons:
+
+\begin{itemize}
+
+  \item{Highlight 1}
+
+  \item{Highlight 2}
+
+  \item{Highlight 3}
+
+  \item{\ldots}
+
+\end{itemize}
+
+\end{@twocolumnfalse}] 
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\clearpage
+
+\linenumbers
+
+\section{Introduction\label{sec:introduction}} \addvspace{10pt}
+
+\section{Experimental methods} \addvspace{10pt}
+
+\section{Numerical methods and model setup} \addvspace{10pt}
+
+\section{Results and Discussion} \addvspace{10pt}
+
+\subsection{Characteristics of initial compartment conditions} \addvspace{10pt}
+
+\subsection{Grid sensitivity} \addvspace{10pt}
+
+\subsection{Comparisons with experiments} \addvspace{10pt}
+
+\section{Conclusion} \addvspace{10pt}
+
+\acknowledgement{Acknowledgments} \addvspace{10pt}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+ \footnotesize
+ \baselineskip 9pt
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\bibliographystyle{pci}
+\bibliography{PCI_LaTeX_Ext}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\newpage
+
+\small
+\baselineskip 10pt
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+
+\end{document}
+
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
+% -------------------------------------------------------------------- %
